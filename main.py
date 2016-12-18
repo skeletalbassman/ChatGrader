@@ -13,7 +13,8 @@ def main(argv):
 				word = word.strip("\n")
 				if word in names:
 					names[word] = names[word] + 1
-	print(names)
+	for name in names:
+		print(name+": "+str(names[name]))
 
 if __name__ == "__main__":
 	main(argv)
